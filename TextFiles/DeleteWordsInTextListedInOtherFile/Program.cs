@@ -36,12 +36,7 @@ namespace DeleteWordsInTextListedInOtherFile
         /// <param name="words"></param>
         static void DeleteAllGivenWordsInFile(string path, List<string> words)
         {
-            string wordPattern = null;
-            for (int i = 0; i < words.Count; i++)
-			{
-                wordPattern += words[i] + "|";
-			}
-            wordPattern = wordPattern.Remove(wordPattern.Length - 1,1);
+            string wordPattern = string.Join("|", words.ToArray());
             string pattern = string.Format(@"\b({0})\b", wordPattern);
             Regex regRemove = new Regex(pattern, RegexOptions.Compiled);
 
