@@ -24,11 +24,11 @@ namespace ConcatenateTwoFiles
                 {
                     string firstFileContent = firstFile.ReadToEnd();
                     newFile.Write(firstFileContent);
-                    using (TextReader secondFile = new StreamReader(secondFilePath))
-                    {
-                        string secondFileContent = secondFile.ReadToEnd();
-                        newFile.Write(secondFileContent);
-                    }
+                }
+                using (TextReader secondFile = new StreamReader(secondFilePath))
+                {
+                    string secondFileContent = secondFile.ReadToEnd();
+                    newFile.Write(secondFileContent);
                 }
             }
         }
