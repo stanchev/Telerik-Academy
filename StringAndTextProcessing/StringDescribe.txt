@@ -1,0 +1,14 @@
+String is array of chars.Strings in C# are immutable.This is when we create one string and changing its content,
+every time when we changing content creates new string in memory.Strings are zero based arrays.
+General methods are: 
+Contains() - search string in string.
+Equals() - compare two strings.
+Format() - Replace format items in string with string representation of specified object.
+IndexOf() - return index of first occurrence of the specified char or string in string.
+Insert() - return new string with inserted specified string at specified index position.
+Join() - Concatenates the elements of an object array, using the specified separator between each element.
+Replace() - Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string.
+Split() - Returns a string array that contains the substrings in this instance that are delimited by elements of a specified Unicode character array.
+ToLower() - convert string to lowercase
+ToUpper() - convert string to uppercase
+Trim() - Removes all leading and trailing white-space characters from the current String object.
