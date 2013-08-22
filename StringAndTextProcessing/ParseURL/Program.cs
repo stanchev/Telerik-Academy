@@ -15,7 +15,7 @@ namespace ParseURL
         /// <param name="url"></param>
         static void ParseUrl(string url)
         {
-            string pattern = @"([\w]+)://([\w\s\d.]+)/([\w\s\W\d]+)";
+            string pattern = @"([\w]+)://([\w\.]+)/([^\s]+)";  //@"([\w]+)://([\w\.]+)/([\w\s\W\d]+)"
             Regex regExpression = new Regex(pattern);
 
             Match match = regExpression.Match(url);
