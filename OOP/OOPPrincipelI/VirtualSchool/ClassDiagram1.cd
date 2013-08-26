@@ -10,18 +10,18 @@
   <Class Name="VirtualSchool.Discipline">
     <Position X="1.75" Y="3.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAYAAEAGAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAYAAEAGAAAAQAAAAEAAAAAAAAAAAAIAA=</HashCode>
       <FileName>Discipline.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VirtualSchool.People">
     <Position X="8.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAIAA=</HashCode>
       <FileName>People.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VirtualSchool.School" Collapsed="true">
+  <Class Name="VirtualSchool.School">
     <Position X="12.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAABAABAAAAAAAAEAAAAAgAAAAAABAA=</HashCode>
@@ -31,7 +31,7 @@
   <Class Name="VirtualSchool.SchoolClass">
     <Position X="4.5" Y="3.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAgAIAAAAQAAAAAIAAAAAIAAAACAAI=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAgAIAAAAQAAAAAIAAAAAIAAAACIAI=</HashCode>
       <FileName>SchoolClass.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -49,7 +49,7 @@
       <FileName>Teacher.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VirtualSchool.VirtualSchool" Collapsed="true">
+  <Class Name="VirtualSchool.VirtualSchool">
     <Position X="14.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
