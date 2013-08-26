@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VirtualSchool.Comment">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.Discipline">
+    <Position X="1.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAYAAEAGAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Discipline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.People">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>People.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.School" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAABAAAAAAAAEAAAAAgAAAAAABAA=</HashCode>
+      <FileName>School.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.SchoolClass">
+    <Position X="4.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAgAIAAAAQAAAAAIAAAAAIAAAACAAI=</HashCode>
+      <FileName>SchoolClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.Student">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.Teacher">
+    <Position X="7.25" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAEAEAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualSchool.VirtualSchool" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>VirtualSchool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
