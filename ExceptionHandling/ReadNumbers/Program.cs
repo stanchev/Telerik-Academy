@@ -34,18 +34,16 @@ namespace ReadNumbers
 
         static void Main(string[] args)
         {
-            Console.Write("Enter start number : ");
-            int start = int.Parse(Console.ReadLine());
-            Console.Write("Enter end number : ");
-            int end = int.Parse(Console.ReadLine());
+            int lowRange = 1, highRange = 100;
             int count = 10;
             int[] numbers = new int[count];
             for (int i = 0; i < count; i++)
             {
                 try
                 {
-                    Console.Write("Enter #{0} number in range[{1}-{2}] : ", i + 1, start, end);
-                    numbers[i] = ReadNumber(start, end);
+                    Console.Write("Enter #{0} number in range[{1}-{2}] : ", i + 1, lowRange, highRange);
+                    lowRange = numbers[i] = ReadNumber(lowRange, 100);
+                    
                 }
                 catch (ArgumentOutOfRangeException e)
                 {
