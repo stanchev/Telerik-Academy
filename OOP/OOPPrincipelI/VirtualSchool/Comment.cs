@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VirtualSchool
 {
-    abstract class Comment
+    class Comment
     {
         private List<string> comments;
 

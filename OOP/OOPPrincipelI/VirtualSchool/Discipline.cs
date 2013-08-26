@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace VirtualSchool
 {
-    class Discipline : Comment
+    class Discipline
     {
         private string name;
         private int countOfLectures;
         private int countOfExercises;
+        public Comment Comments { get; set; }
 
         public string Name
         {
@@ -53,7 +54,8 @@ namespace VirtualSchool
             this.name = name;
             this.countOfLectures = countOfLectures;
             this.countOfExercises = countOfExercises;
-            this.AddComment(comment);
+            this.Comments = new Comment();
+            this.Comments.AddComment(comment);
         }
 
         public Discipline(string name)

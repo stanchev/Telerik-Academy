@@ -23,7 +23,7 @@ namespace VirtualSchool
             A1.AddStudent("Mariika","mimeto");
             A1.AddTeacher(new Teacher("Pe6o"));
             ivanVazov.AddClass(A1);
-            
+
             SchoolClass A2 = new SchoolClass("A2");
             A2.AddStudent("Ivan");
             A2.AddStudent("Pe6o");

@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace VirtualSchool
 {
-    class SchoolClass : Comment
+    class SchoolClass
     {
         private int studentNumber = 1;
         private string className;
         private List<Teacher> teachers;
         private List<Student> students;
+        public Comment Comments { get; set; }
 
         public string Name
         {
@@ -26,7 +27,8 @@ namespace VirtualSchool
             this.className = className;
             this.teachers = new List<Teacher>();
             this.students = new List<Student>();
-            this.AddComment(comment);
+            this.Comments = new Comment();
+            this.Comments.AddComment(comment);
         }
 
         public void AddStudent(string name, string comment = null)

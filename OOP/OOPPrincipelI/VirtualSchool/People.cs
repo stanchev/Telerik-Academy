@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace VirtualSchool
 {
-    class People : Comment
+    class People
     {
         private string name;
+        public Comment Comments { get; set; }
 
         public string Name
         {
@@ -25,7 +26,8 @@ namespace VirtualSchool
         public People(string name, string comment = null)
         {
             this.name = name;
-            this.AddComment(comment);
+            this.Comments = new Comment();
+            this.Comments.AddComment(comment);
         }
     }
 }
