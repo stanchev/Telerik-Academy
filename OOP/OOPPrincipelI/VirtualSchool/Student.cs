@@ -26,7 +26,7 @@ namespace VirtualSchool
 
         public override string ToString()
         {
-            string studentInformation = "Name: " + this.Name + " Number: " + this.studentNumber;
+            string studentInformation = "Name: " + base.Name + " Number: " + this.studentNumber;
             return studentInformation;
         }
     }

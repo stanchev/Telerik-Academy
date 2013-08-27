@@ -47,7 +47,7 @@ namespace VirtualSchool
         public override string ToString()
         {
             StringBuilder teacherInfo = new StringBuilder();
-            teacherInfo.Append("Teacher: " + this.Name);
+            teacherInfo.Append("Teacher: " + base.Name);
             foreach (Discipline item in this.disciplines)
             {
                 teacherInfo.Append("  " + item);
