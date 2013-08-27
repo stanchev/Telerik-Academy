@@ -24,8 +24,15 @@ namespace HumanWork
 
         public int CompareTo(object obj)
         {
-            Human other = (Human)obj;
-
+            Human other = null;
+            if (obj is Human)
+            {
+                other = (Human)obj;
+            }
+            else
+            {
+                throw new ApplicationException("Invalid parameter. Parameter must be Human type.");
+            }
             if (this.FirstName.CompareTo(other.FirstName) == 0)
             {
                 if (this.LastName.CompareTo(other.LastName) == 0)

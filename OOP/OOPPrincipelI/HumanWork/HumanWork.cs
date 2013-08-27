@@ -51,6 +51,8 @@ namespace HumanWork
             {
                 Console.WriteLine(item);
             }
+            Student s = new Student("Ivan", "Ivanov");
+            s.CompareTo("s");
         }
     }
 }
