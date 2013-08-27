@@ -35,19 +35,19 @@ namespace HumanWork
 
             workers = workers.OrderByDescending(m => m.MoneyPerHour()).ToList();
 
-            List<Human> h = new List<Human>();
-            h.AddRange(students);
-            h.AddRange(workers);
+            List<Human> humans = new List<Human>();
+            humans.AddRange(students);
+            humans.AddRange(workers);
             //use sort with LINQ
-            h.OrderBy(m => m.FirstName).ThenBy(m => m.LastName).ToList().ForEach(m =>
+            humans.OrderBy(m => m.FirstName).ThenBy(m => m.LastName).ToList().ForEach(m =>
             {
                 Console.WriteLine(m);
             }
             );
             // use sort with implemented IComparable
-            h.Sort();
+            humans.Sort();
             Console.WriteLine("------------------------------");
-            foreach (Human item in h)
+            foreach (Human item in humans)
             {
                 Console.WriteLine(item);
             }
