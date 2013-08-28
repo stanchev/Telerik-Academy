@@ -34,7 +34,7 @@ namespace Animals
             an[1] = new Kitten("Pepi", 5);
             an[2] = new Kitten("Lili", 7);
 
-            foreach (KeyValuePair<string,double> item in Animal.AverageAge(animals))
+            foreach (KeyValuePair<string,double> item in Animal.GetAverageAge(animals))
             {
                 Console.WriteLine("Animal kind: " + item.Key + "  Average age of animal kind: " + item.Value);
             }
