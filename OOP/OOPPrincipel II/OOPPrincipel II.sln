@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Shapes", "Shapes\01. Shapes.csproj", "{93628A37-6687-49CD-AFDF-BEB70BEFEBE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. VirtualBank", "VirtualBank\02. VirtualBank.csproj", "{9A7065D9-6705-48A3-A052-412F0D73F7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. InvalidRangeCheck", "InvalidRangeCheck\03. InvalidRangeCheck.csproj", "{A0B860E7-96B0-447E-BC34-D96ED3231F9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93628A37-6687-49CD-AFDF-BEB70BEFEBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93628A37-6687-49CD-AFDF-BEB70BEFEBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93628A37-6687-49CD-AFDF-BEB70BEFEBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93628A37-6687-49CD-AFDF-BEB70BEFEBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7065D9-6705-48A3-A052-412F0D73F7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7065D9-6705-48A3-A052-412F0D73F7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7065D9-6705-48A3-A052-412F0D73F7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7065D9-6705-48A3-A052-412F0D73F7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B860E7-96B0-447E-BC34-D96ED3231F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B860E7-96B0-447E-BC34-D96ED3231F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B860E7-96B0-447E-BC34-D96ED3231F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B860E7-96B0-447E-BC34-D96ED3231F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
