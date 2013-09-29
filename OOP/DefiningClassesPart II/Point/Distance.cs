@@ -8,6 +8,12 @@ namespace Point
 {
     static class Distance
     {
+        /// <summary>
+        /// Calculate distance between two 3D points.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public static double CalculateDistanceBetween3DPoints(Point3D first, Point3D second)
         {
             double deltaX = first.X - second.X;
