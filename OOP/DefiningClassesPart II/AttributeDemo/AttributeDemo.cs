@@ -24,27 +24,30 @@ namespace AttributeDemo
         static void Main(string[] args)
         {
             MemberInfo member = typeof(AttributeDemo);
-            
             Console.WriteLine("Information for class: {0}",member.Name);
             foreach (Attribute attribute in member.GetCustomAttributes())
             {
-                if (attribute is VersionAttribute)
-                {
-                    VersionAttribute version = (VersionAttribute)attribute;
-                    Console.WriteLine("     Version: {0}",version.GetVersion);
-                }
+                PrintVersionAttributeInfo(attribute);
             }
-            foreach (MethodInfo method in typeof(AttributeDemo).GetMethods(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static))
+
+            MethodInfo[] methods = typeof(AttributeDemo).GetMethods(BindingFlags.Instance | BindingFlags.NonPublic |
+                BindingFlags.Public | BindingFlags.Static);
+            foreach (MethodInfo method in methods )
             {
                 Console.WriteLine("Method name : {0}",method.Name);
                 foreach (Attribute attribute in method.GetCustomAttributes())
                 {
-                    if (attribute is VersionAttribute)    
-                    {
-                        VersionAttribute version = (VersionAttribute)attribute;
-                        Console.WriteLine("     Version: {0}", version.GetVersion);
-                    }
+                    PrintVersionAttributeInfo(attribute);
                 }
+            }
+        }
+
+        private static void PrintVersionAttributeInfo(Attribute attribute)
+        {
+            if (attribute is VersionAttribute)
+            {
+                VersionAttribute version = (VersionAttribute)attribute;
+                Console.WriteLine("     Version: {0}", version.GetVersion);
             }
         }
     }
