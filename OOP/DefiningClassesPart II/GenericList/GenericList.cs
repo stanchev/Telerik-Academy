@@ -12,6 +12,9 @@ namespace GenericList
         private int nextElement;
         private int capacity;
 
+        /// <summary>
+        /// Get count of elements in list.
+        /// </summary>
         public int Count
         {
             get
@@ -34,6 +37,11 @@ namespace GenericList
             }
         }
 
+        /// <summary>
+        /// Get or set element by index.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public T this[int index]
         {
             get
@@ -48,6 +56,10 @@ namespace GenericList
             }
         }
 
+        /// <summary>
+        /// Add element to list.
+        /// </summary>
+        /// <param name="element"></param>
         public void AddElement(T element)
         {
             if (this.nextElement >= this.capacity)
@@ -58,6 +70,9 @@ namespace GenericList
             this.nextElement++;
         }
 
+        /// <summary>
+        /// Grow twice size of list.
+        /// </summary>
         private void GrowList()
         {
             T[] temp = new T[this.capacity];
@@ -67,6 +82,10 @@ namespace GenericList
             temp.CopyTo(this.elements, 0);
         }
 
+        /// <summary>
+        /// Delete element at index.
+        /// </summary>
+        /// <param name="index"></param>
         public void RemoveElementAt(int index)
         {
             CheckRange(index);
@@ -79,6 +98,11 @@ namespace GenericList
             this.nextElement--;
         }
 
+        /// <summary>
+        /// Insert given element at index.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="element"></param>
         public void InsertElementAt(int index, T element)
         {
             CheckRange(index);
@@ -94,17 +118,29 @@ namespace GenericList
             this.nextElement++;
         }
 
+        /// <summary>
+        /// Clear list.
+        /// </summary>
         public void ClearList()
         {
             this.elements = new T[this.capacity];
             this.nextElement = 0;
         }
 
+        /// <summary>
+        /// Find element in list and return its index.
+        /// </summary>
+        /// <param name="searchValue"></param>
+        /// <returns></returns>
         public int FindElementIndex(T searchValue)
         {
             return Array.IndexOf(this.elements, searchValue);
         }
 
+        /// <summary>
+        /// Check for correct range.
+        /// </summary>
+        /// <param name="index"></param>
         private void CheckRange(int index)
         {
             if (index < 0 || index >= this.nextElement)
