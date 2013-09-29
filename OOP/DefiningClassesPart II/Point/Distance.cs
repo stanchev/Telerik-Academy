@@ -9,7 +9,7 @@ namespace Point
     static class Distance
     {
         /// <summary>
-        /// Calculate distance between two 3D points.
+        /// Calculate distance between two 3D points by Euclidean distance.
         /// </summary>
         /// <param name="first"></param>
         /// <param name="second"></param>
