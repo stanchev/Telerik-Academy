@@ -139,25 +139,25 @@ namespace MobilePhone
 
         public GSM(string model, string manufacturer, double? price = null, string owner = null, Battery battery = null, Display display = null)
         {
-            this.model = model;
-            this.manufacturer = manufacturer;
-            this.price = price;
-            this.owner = owner;
+            this.Model = model;
+            this.Manufacturer = manufacturer;
+            this.Price = price;
+            this.Owner = owner;
             if (battery == null)
             {
-                this.battery = new Battery();
+                this.Battery = new Battery();
             }
             else
             {
-                this.battery = battery;
+                this.Battery = battery;
             }
             if (display == null)
             {
-                this.display = new Display();
+                this.Display = new Display();
             }
             else
             {
-                this.display = display;
+                this.Display = display;
             }
             this.callHistory = new List<Call>();
         }
