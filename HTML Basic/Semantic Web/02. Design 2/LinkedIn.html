@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>Simple LinkedIn main page</title>
+    <link type="text/css" rel="stylesheet" href="main.css" media="screen" />
+    <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+    <header>
+        <h1>LinkedIn</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">What is LinkedIn?</a></li>
+                <li><a href="#">Join Today</a></li>
+                <li>
+                    <fieldset>
+                        <legend><a href="#">Sign In</a></legend>
+                        <form action="alabala.asp" method="post">
+                            <ul>
+                                <li>
+                                    <label for="Email">Email address</label>
+                                    <input type="email" id="Email" name="email" required="required" placeholder="Enter your E-mail address" /><br />
+                                </li>
+                                <li>
+                                    <label for="Email">Password</label>
+                                    <input type="Password" id="Password" name="password" required="required" placeholder="Enter your password" /><br />
+                                </li>
+                                <li>
+                                    <input type="submit" value="Submit" />
+                                </li>
+                            </ul>
+                        </form>
+                    </fieldset>
+                </li>
+            </ul>
+        </nav>
+        <hr />
+    </header>
+    <section>
+        <article>
+            <h2>Over 175 million professionals use LinkedIn to exchange information,ideas and opportunities</h2>
+            <ul>
+                <li>Stay informed about your contacts and industry</li>
+                <li>Find the people & knowledge you need to achieve your goals</li>
+                <li>Control your professional identity online</li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h3>Join LinkedIn Today</h3>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form action="alabala.asp" method="post">
+                <ul>
+                    <li>First Name:<br />
+                        <input type="text" name="firstName" required="required" />
+                    </li>
+                    <li>Last Name:<br />
+                        <input type="text" name="lastName" required="required" />
+                    </li>
+                    <li>Email:<br />
+                        <input type="text" name="email" required="required" />
+                    </li>
+                    <li>Password:<br />
+                        <input type="text" name="password" required="required" />
+                        <p>6 or more characters</p>
+                    </li>
+                </ul>
+                <input type="submit" value="Submit" />
+                <p>Already on LinkedIn? <a href="#">Sign In</a></p>
+            </form>
+        </fieldset>
+    </section>
+    <section>
+        <h4>Search for someone by name:</h4>
+        <form action="alabala.asp" method="post">
+            <ul>
+                <li>
+                    <label for="FirstName">First Name</label>
+                    <input type="text" id="FirstName" name="firstName" required="required" placeholder="FirstName" />
+                </li>
+                <li>
+                    <label for="LastName">Last Name</label>
+                    <input type="text" id="LastName" name="lastName" required="required" placeholder="LastName"/>
+                </li>
+            </ul>
+            <input type="submit" value="Go" />
+        </form>
+    </section>
+
+</body>
+</html>
