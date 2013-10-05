@@ -37,7 +37,7 @@ namespace Shapes
         {
 
         }
-
+        
         public override double CalculateSurface()
         {
             double surface = this.Width * this.Height;

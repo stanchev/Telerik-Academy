@@ -32,9 +32,9 @@ namespace VirtualBank
 
         protected Customer(string name, string address, string telephoneNumber)
         {
-            this.name = name;
-            this.address = address;
-            this.telephoneNumber = telephoneNumber;
+            this.Name = name;
+            this.Address = address;
+            this.TelephoneNumber = telephoneNumber;
         }
 
         public override string ToString()

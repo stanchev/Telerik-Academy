@@ -42,8 +42,8 @@ namespace VirtualBank
 
         public Account(Customer customer, decimal monthlyInterestRate, decimal balance = 0)
         {
-            this.customer = customer;
-            this.balance = balance;
+            this.Customer = customer;
+            this.Balance = balance;
             this.MonthlyInterestRate = monthlyInterestRate;
         }
 

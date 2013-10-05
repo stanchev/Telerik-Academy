@@ -19,7 +19,7 @@ namespace VirtualBank
         public IndividualCustomer(string name, int egn, string address, string telephoneNumber)
             : base(name, address, telephoneNumber)
         {
-            this.egn = egn;
+            this.EGN = egn;
         }
 
         public override string ToString()

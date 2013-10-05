@@ -21,15 +21,15 @@ namespace VirtualBank
     {
         static void Main(string[] args)
         {
-            CompanyCustomer company = new CompanyCustomer("Bakaliq", "BG123456", "Sofia", "0123456");
-            LoanAccount da = new LoanAccount(company, 0.5m, 10000);
-            da.AddDeposit(10000);
+            CompanyCustomer companyBakaliq = new CompanyCustomer("Bakaliq", "BG123456", "Sofia", "0123456");
+            LoanAccount loanAccount = new LoanAccount(companyBakaliq, 0.5m, 10000);
+            loanAccount.AddDeposit(10000);
             int months = 12;
-            Console.WriteLine("{0}have interest for {1} months: {2}%  ",da.Customer,months,
-                da.CalculateInterestAmountForGivenTime(months));
-            da.Customer = new IndividualCustomer("Stamat", 890911, "u tqh si", "778998");
-            Console.WriteLine("{0}have interest for {1} months: {2}%  ", da.Customer, months,
-                da.CalculateInterestAmountForGivenTime(months));
+            Console.WriteLine("{0}have interest for {1} months: {2}%  ",loanAccount.Customer,months,
+                loanAccount.CalculateInterestAmountForGivenTime(months));
+            loanAccount.Customer = new IndividualCustomer("Stamat", 890911, "u tqh si", "778998");
+            Console.WriteLine("{0}have interest for {1} months: {2}%  ", loanAccount.Customer, months,
+                loanAccount.CalculateInterestAmountForGivenTime(months));
         }
     }
 }

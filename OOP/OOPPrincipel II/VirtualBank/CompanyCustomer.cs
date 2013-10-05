@@ -19,7 +19,7 @@ namespace VirtualBank
         public CompanyCustomer(string companyName, string bulstat, string address, string telephoneNumber)
             : base(companyName, address, telephoneNumber)
         {
-            this.bulstat = bulstat;
+            this.Bulstat = bulstat;
         }
 
         public override string ToString()
