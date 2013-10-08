@@ -1,0 +1,33 @@
+﻿body, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li > ul {
+    display: none;
+}
+
+li:hover > a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li:hover > ul {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: 16px;
+    color: gray;
+}
+
+nav > ul {
+    display: inline-block;
+}
